@@ -5,152 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Калькулятор стоимости услуги</title>
     <link rel="stylesheet" href="styles.css">
-    <style>
-        /* Добавляем стили для кнопки прямо в HTML */
-        .calculate-button {
-            background-color: #4CAF50;
-            color: white;
-            padding: 12px 24px;
-            border: none;
-            border-radius: 4px;
-            cursor: pointer;
-            font-size: 16px;
-            font-weight: bold;
-            width: 100%;
-            transition: background-color 0.3s;
-            margin-top: 20px;
-        }
-
-        .calculate-button:hover {
-            background-color: #45a049;
-        }
-
-        .calculate-button:active {
-            transform: translateY(1px);
-        }
-
-        /* Стили для формы */
-        .calculator-container {
-            max-width: 600px;
-            margin: 50px auto;
-            padding: 30px;
-            background-color: #f9f9f9;
-            border-radius: 10px;
-            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-        }
-
-        h1 {
-            text-align: center;
-            color: #333;
-            margin-bottom: 30px;
-        }
-
-        .form-group {
-            margin-bottom: 20px;
-        }
-
-        label {
-            display: block;
-            margin-bottom: 8px;
-            font-weight: bold;
-            color: #555;
-        }
-
-        input[type="number"] {
-            width: 100%;
-            padding: 10px;
-            border: 1px solid #ddd;
-            border-radius: 4px;
-            font-size: 16px;
-        }
-
-        .radio-group {
-            display: flex;
-            flex-direction: column;
-            gap: 12px;
-        }
-
-        .radio-label {
-            display: flex;
-            align-items: center;
-            padding: 12px;
-            background-color: white;
-            border: 1px solid #ddd;
-            border-radius: 4px;
-            cursor: pointer;
-            transition: all 0.3s;
-        }
-
-        .radio-label:hover {
-            background-color: #f5f5f5;
-            border-color: #4CAF50;
-        }
-
-        .radio-label input[type="radio"] {
-            margin-right: 10px;
-        }
-
-        .price-info {
-            margin-left: auto;
-            font-weight: bold;
-            color: #4CAF50;
-        }
-
-        select {
-            width: 100%;
-            padding: 10px;
-            border: 1px solid #ddd;
-            border-radius: 4px;
-            font-size: 16px;
-            background-color: white;
-        }
-
-        .checkbox-label {
-            display: flex;
-            align-items: center;
-            padding: 12px;
-            background-color: white;
-            border: 1px solid #ddd;
-            border-radius: 4px;
-            cursor: pointer;
-        }
-
-        .checkbox-label input[type="checkbox"] {
-            margin-right: 10px;
-        }
-
-        .result-section {
-            margin-top: 30px;
-            padding: 20px;
-            background-color: white;
-            border-radius: 8px;
-            border: 2px solid #4CAF50;
-        }
-
-        .result-section h2 {
-            margin-top: 0;
-            color: #333;
-            font-size: 18px;
-        }
-
-        .total-price {
-            font-size: 32px;
-            font-weight: bold;
-            color: #2c3e50;
-            margin: 10px 0;
-            text-align: center;
-        }
-
-        .price-breakdown {
-            font-size: 14px;
-            color: #666;
-            line-height: 1.6;
-            padding: 10px;
-            background-color: #f8f9fa;
-            border-radius: 4px;
-            margin-top: 15px;
-        }
-    </style>
 </head>
 <body>
     <div class="calculator-container">
@@ -203,13 +57,6 @@
                 </label>
             </div>
 
-            <!-- Кнопка расчета -->
-            <div class="form-group">
-                <button type="button" id="calculate-btn" class="calculate-button">
-                    Рассчитать стоимость
-                </button>
-            </div>
-
             <!-- Блок с результатом -->
             <div class="result-section">
                 <h2>Итоговая стоимость:</h2>
@@ -221,4 +68,6 @@
         </form>
     </div>
 
-    <script>
+    <script src="calculator.js"></script>
+</body>
+</html>
